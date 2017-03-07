@@ -1,0 +1,73 @@
+body {
+    background-color: rgba(20, 20, 21, 0.37);
+}
+
+.container {
+    min-width: 1200px;
+    margin-top: 150px;
+}
+
+
+.pokemon {
+    background-color: rgba(217, 222, 13, 0.52);
+    border: 4px solid #fffce0;
+    min-height: 240px;
+    width: 260px;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.s5:before {
+    position: absolute;
+    right: 80px;
+    bottom: 5px;
+    width: 100%;
+    height: 37%;
+    border-radius: 0 10% 0 0;
+    z-index: -1;
+    content: "";
+    box-shadow: 86px 0 17px rgba(0,0,0,0.33);
+    -webkit-transform: skew(-36deg);
+    -moz-transform: skew(-36deg);
+    -ms-transform: skew(-36deg);
+    -o-transform: skew(-36deg);
+    transform: skew(-36deg);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+img {
+    height: 192px;
+    width: 192px;
+
+}
+.btn.btn-primary {
+    box-shadow:1px 3px 16px #000000;
+}
+
+.start-btn {
+    position: fixed;
+    bottom: 50%;
+    right: 50px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow:1px 3px 16px #000000;
+}
+
+.title {
+    color: #1A7B72;
+    text-shadow: 1px 1px 2px black;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.radio-btn {
+    width: 30px;
+    height: 30px;
+}
+

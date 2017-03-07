@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app = 'myApp'>
+<head>
+	<title>Pokemon :: Jump</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--
+        We are importing our angular script as
+         well as our angular routes script from
+         bower component folder. This will only work
+         if we set that folder as a static folder
+         in our server.js file
+     -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="/js/level.js"></script>
+    <script src="/js/player.js"></script>
+    <script src="/js/controll.js"></script>
+    <script src="/js/requestAnimationFrame.js"></script>
+    <script src="/js/chatroom.js"></script>
+
+
+<!--
+	After importing angular the file we should be importing is our app.js
+	file. This file is where we instantiate our angular application as well
+	as pass in our dependencies. For this assignment we will only be injecting
+	ng router.
+
+	Make sure that as you add new controllers and factories, that we must include
+	a script tag for each one.
+ -->
+    <script src = "/js/app.js"></script>
+    <script src = "/controllers/gameController.js"></script>
+    <script src = "/controllers/indexController.js"></script>
+    <script src = "/controllers/resultController.js"></script>
+    <script src = "/controllers/socketController.js"></script>
+    <script src = "/factories/userFactory.js"></script>
+    <script src = "/factories/userChoiceFactory.js"></script>
+    <script src = "/factories/socketFactory.js"></script>
+
+</head>
+<body>
+    <div ng-view></div>
+</body>
+</html>

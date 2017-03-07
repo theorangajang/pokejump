@@ -1,0 +1,29 @@
+<div>
+  <link rel="stylesheet" href="/stylesheets/homepage_style.css">
+
+    <div class="container">
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Pokemon Jump</h1>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" class="form-registration" action="/login" method="post">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group input-group-lg">
+                                        <label>Your NickName:</label>
+                                        <input type="text" name="name" class="form-control input-sm" aria-describedby="sizing-addon1" placeholder="Your NickName" ng-model="user.name">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-info" ng-click="createUsername()" ng-init="user.score=0">Single Player</button>
+                                <button type="button" class="btn btn-info" ng-click="createChatroom()">ChatRoom</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>

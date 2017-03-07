@@ -1,0 +1,32 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+.container {
+    background-color: #0b0b0b;
+    color: #fefefe;
+    border: 6px solid #00ff00;
+    padding: 50px;
+    height: 350px;
+    box-shadow: 10px 10px 20px #000;
+    overflow: scroll;
+}
+
+#status {
+    background-color: #0f9d58;
+    padding: 10px;
+}
+#msg {
+    width: 100%;
+}
+
+.btn {
+    outline: none;
+    background-color: #00a0df;
+    box-shadow: 10px 10px 20px #000;
+}
+.right {float: right;}

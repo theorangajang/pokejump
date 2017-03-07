@@ -1,0 +1,13 @@
+div {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  top: 350px;
+}
+
+.panel-title {
+    font-size: 28px;
+    font-weight: 700;
+}

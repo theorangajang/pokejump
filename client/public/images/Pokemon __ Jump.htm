@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:5000/#/select -->
+<html ng-app="myApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	<title>Pokemon :: Jump</title>
+    <link rel="stylesheet" href="./Pokemon __ Jump_files/bootstrap.min.css">
+    <!--
+        We are importing our angular script as
+         well as our angular routes script from
+         bower component folder. This will only work
+         if we set that folder as a static folder
+         in our server.js file
+     -->
+    <script src="./Pokemon __ Jump_files/jquery-3.1.0.min.js"></script>
+    <script src="./Pokemon __ Jump_files/bootstrap.min.js"></script>
+    <script src="./Pokemon __ Jump_files/angular.js"></script>
+    <script src="./Pokemon __ Jump_files/angular-route.js"></script>
+    <script src="./Pokemon __ Jump_files/level.js"></script>
+    <script src="./Pokemon __ Jump_files/player.js"></script>
+    <script src="./Pokemon __ Jump_files/controll.js"></script>
+    <script src="./Pokemon __ Jump_files/requestAnimationFrame.js"></script>
+
+
+<!--
+	After importing angular the file we should be importing is our app.js
+	file. This file is where we instantiate our angular application as well
+	as pass in our dependencies. For this assignment we will only be injecting
+	ng router.
+
+	Make sure that as you add new controllers and factories, that we must include
+	a script tag for each one.
+ -->
+    <script src="./Pokemon __ Jump_files/app.js"></script>
+    <script src="./Pokemon __ Jump_files/gameController.js"></script>
+    <script src="./Pokemon __ Jump_files/indexController.js"></script>
+    <script src="./Pokemon __ Jump_files/userFactory.js"></script>
+    <script src="./Pokemon __ Jump_files/userChoiceFactory.js"></script>
+
+</head>
+<body>
+    <!-- ngView: --><div ng-view="" class="ng-scope">
+<link rel="stylesheet" href="./Pokemon __ Jump_files/selection_style.css" class="ng-scope">
+
+<!--<div class="pokemonSelection">-->
+    <!--<form>-->
+        <!--<div class="pokemonOptions" ng-repeat="poke_index in range(1, 20)">-->
+            <!--<img ng-src="http://pokeapi.co/media/img/{{poke_index}}.png" alt="pokemon {{poke_index}}" class="pokemonIndex">-->
+            <!--<input type="radio" ng-model="$parent.radioValue" value="{{poke_index}}">-->
+        <!--</div>-->
+        <!--<button class="pokemonOptions" type="submit" ng-click="chosenPokemon(radioValue)">Start Game!</button>-->
+    <!--</form>-->
+<!--</div>-->
+<div class="ng-scope">
+    <div class="container pokemonOptions">
+      <h2 class="ng-binding">Welcome,  !</h2>
+        <div class="row">
+          <!-- ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/1.png" alt="pokemon 1" class="pokemonIndex" src="./Pokemon __ Jump_files/1.png">
+            <input type="radio" ng-model="$parent.radioValue" value="1" class="ng-pristine ng-untouched ng-valid ng-empty" name="4">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/2.png" alt="pokemon 2" class="pokemonIndex" src="./Pokemon __ Jump_files/2.png">
+            <input type="radio" ng-model="$parent.radioValue" value="2" class="ng-pristine ng-untouched ng-valid ng-empty" name="6">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/3.png" alt="pokemon 3" class="pokemonIndex" src="./Pokemon __ Jump_files/3.png">
+            <input type="radio" ng-model="$parent.radioValue" value="3" class="ng-pristine ng-untouched ng-valid ng-empty" name="8">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/4.png" alt="pokemon 4" class="pokemonIndex" src="./Pokemon __ Jump_files/4.png">
+            <input type="radio" ng-model="$parent.radioValue" value="4" class="ng-pristine ng-untouched ng-valid ng-empty" name="10">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/5.png" alt="pokemon 5" class="pokemonIndex" src="./Pokemon __ Jump_files/5.png">
+            <input type="radio" ng-model="$parent.radioValue" value="5" class="ng-pristine ng-untouched ng-valid ng-empty" name="12">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/6.png" alt="pokemon 6" class="pokemonIndex" src="./Pokemon __ Jump_files/6.png">
+            <input type="radio" ng-model="$parent.radioValue" value="6" class="ng-pristine ng-untouched ng-valid ng-empty" name="14">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/7.png" alt="pokemon 7" class="pokemonIndex" src="./Pokemon __ Jump_files/7.png">
+            <input type="radio" ng-model="$parent.radioValue" value="7" class="ng-pristine ng-untouched ng-valid ng-empty" name="16">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/8.png" alt="pokemon 8" class="pokemonIndex" src="./Pokemon __ Jump_files/8.png">
+            <input type="radio" ng-model="$parent.radioValue" value="8" class="ng-pristine ng-untouched ng-valid ng-empty" name="18">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/9.png" alt="pokemon 9" class="pokemonIndex" src="./Pokemon __ Jump_files/9.png">
+            <input type="radio" ng-model="$parent.radioValue" value="9" class="ng-pristine ng-untouched ng-valid ng-empty" name="20">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/10.png" alt="pokemon 10" class="pokemonIndex" src="./Pokemon __ Jump_files/10.png">
+            <input type="radio" ng-model="$parent.radioValue" value="10" class="ng-pristine ng-untouched ng-valid ng-empty" name="22">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/11.png" alt="pokemon 11" class="pokemonIndex" src="./Pokemon __ Jump_files/11.png">
+            <input type="radio" ng-model="$parent.radioValue" value="11" class="ng-pristine ng-untouched ng-valid ng-empty" name="24">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/12.png" alt="pokemon 12" class="pokemonIndex" src="./Pokemon __ Jump_files/12.png">
+            <input type="radio" ng-model="$parent.radioValue" value="12" class="ng-pristine ng-untouched ng-valid ng-empty" name="26">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/13.png" alt="pokemon 13" class="pokemonIndex" src="./Pokemon __ Jump_files/13.png">
+            <input type="radio" ng-model="$parent.radioValue" value="13" class="ng-pristine ng-untouched ng-valid ng-empty" name="28">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/14.png" alt="pokemon 14" class="pokemonIndex" src="./Pokemon __ Jump_files/14.png">
+            <input type="radio" ng-model="$parent.radioValue" value="14" class="ng-pristine ng-untouched ng-valid ng-empty" name="30">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/15.png" alt="pokemon 15" class="pokemonIndex" src="./Pokemon __ Jump_files/15.png">
+            <input type="radio" ng-model="$parent.radioValue" value="15" class="ng-pristine ng-untouched ng-valid ng-empty" name="32">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/16.png" alt="pokemon 16" class="pokemonIndex" src="./Pokemon __ Jump_files/16.png">
+            <input type="radio" ng-model="$parent.radioValue" value="16" class="ng-pristine ng-untouched ng-valid ng-empty" name="34">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/17.png" alt="pokemon 17" class="pokemonIndex" src="./Pokemon __ Jump_files/17.png">
+            <input type="radio" ng-model="$parent.radioValue" value="17" class="ng-pristine ng-untouched ng-valid ng-empty" name="36">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/18.png" alt="pokemon 18" class="pokemonIndex" src="./Pokemon __ Jump_files/18.png">
+            <input type="radio" ng-model="$parent.radioValue" value="18" class="ng-pristine ng-untouched ng-valid ng-empty" name="38">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/19.png" alt="pokemon 19" class="pokemonIndex" src="./Pokemon __ Jump_files/19.png">
+            <input type="radio" ng-model="$parent.radioValue" value="19" class="ng-pristine ng-untouched ng-valid ng-empty" name="40">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/20.png" alt="pokemon 20" class="pokemonIndex" src="./Pokemon __ Jump_files/20.png">
+            <input type="radio" ng-model="$parent.radioValue" value="20" class="ng-pristine ng-untouched ng-valid ng-empty" name="42">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/21.png" alt="pokemon 21" class="pokemonIndex" src="./Pokemon __ Jump_files/21.png">
+            <input type="radio" ng-model="$parent.radioValue" value="21" class="ng-pristine ng-untouched ng-valid ng-empty" name="44">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/22.png" alt="pokemon 22" class="pokemonIndex" src="./Pokemon __ Jump_files/22.png">
+            <input type="radio" ng-model="$parent.radioValue" value="22" class="ng-pristine ng-untouched ng-valid ng-empty" name="46">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/23.png" alt="pokemon 23" class="pokemonIndex" src="./Pokemon __ Jump_files/23.png">
+            <input type="radio" ng-model="$parent.radioValue" value="23" class="ng-pristine ng-untouched ng-valid ng-empty" name="48">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) --><div class="pokemon col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 ng-scope" ng-repeat="poke_index in range(1, 25)">
+            <img ng-src="http://pokeapi.co/media/img/24.png" alt="pokemon 24" class="pokemonIndex" src="./Pokemon __ Jump_files/24.png">
+            <input type="radio" ng-model="$parent.radioValue" value="24" class="ng-pristine ng-untouched ng-valid ng-empty" name="50">
+          </div><!-- end ngRepeat: poke_index in range(1, 25) -->
+        </div>
+      <button type="button" class="btn btn-info" ng-click="createUsername()" ng-init="user.score=0">Multiple Players</button>
+    </div>
+</div></div>
+
+
+<div id="window-resizer-tooltip" style="display: block;"><a href="http://localhost:5000/#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1600</span> x <span class="tooltipHeight" id="winHeight">900</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">2133</span> x <span class="tooltipHeight" id="vpHeight">1141</span></div><span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; opacity: 0.9; cursor: pointer; top: 906px; left: 1122.6px; background-image: url(&quot;chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png&quot;); background-size: 100px 25px;"></span></body></html>

@@ -1,0 +1,21 @@
+
+<title><%= title %></title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+
+<h4 id="welcomeTitle"></h4>
+<h4 id="status" hidden></h4>
+<div class="container"></div>
+<br>
+<hr>
+<br>
+<fieldset>
+    <legend>Messages</legend>
+    <textarea name="message" id="msg" cols="30" rows="5"> </textarea>
+    <br>
+    <br>
+    <input type="submit" ng-click="submitMessage($event)" name="btn" class="btn" value="Send Message">
+    <input type="button" class="btn btn-info" value="Home">
+    <input type="button" class="btn btn-info" value="Ready!">
+    <br>
+</fieldset>
+
